@@ -8,7 +8,4 @@ class NotesUserSerializer(serializers.ModelSerializer):
         fields = ['first_name', 'last_name', 'username', 'email', 'password', 'mobile', 'age']
 
 
-class NotesUserLoginSerializer(serializers.ModelSerializer):
-    class Meta:
-        models = NotesUser
-        fields = ['username', 'password']
+
